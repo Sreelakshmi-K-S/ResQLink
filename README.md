@@ -2,80 +2,60 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# ResQLink 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: EmpowHer
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Akshayalakshmi K - NSS College of Engineering
+- Member 2: Sreelakshmi K S - NSS College of Engineering
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://drive.google.com/file/d/19TsW25pMNENu9eQIT9KCmPWg_mYshy4N/view?usp=drivesdk
 
 ### Project Description
-[2-3 lines about what your project does]
+ResQLink is an offline emergency app that sends SOS alerts and location using Bluetooth mesh when there is no internet. It also triggers a loud siren to attract nearby help during emergencies.
 
 ### The Problem statement
-[What problem are you solving?]
+During disasters, internet and mobile networks often fail, making it impossible for people to send SOS messages or share their location, which delays rescue and increases risk.
 
 ### The Solution
-[How are you solving it?]
-
----
+ResQLink uses Bluetooth mesh technology to send SOS alerts and location details without internet and also activates a loud siren to attract nearby help, ensuring emergency communication even in network failure situations.
 
 ## Technical Details
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+-Languages used: Dart
+-Frameworks used: Flutter
+-Libraries used: nearby_connections (Bluetooth Mesh / P2P), provider (State Management), geolocator (Location Services), -  permission_handler (Runtime Permissions), audioplayers (Siren Alert), json_serializable (Model Serialization)
+-Tools used: Android Studio / VS Code, Flutter SDK, Git & GitHub, Gradle, Physical Android Devices for testing
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
 
----
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
-
----
+Feature 1: Offline SOS Communication – Sends emergency alerts using Bluetooth mesh when internet and mobile networks are unavailable.
+Feature 2: Automatic Location Sharing – Shares real-time GPS coordinates with nearby devices for accurate rescue tracking.
+Feature 3: Loud Emergency Siren – Activates a high-volume siren to attract nearby attention during critical situations.
+Feature 4: Rescue Authority Mode – Allows rescue teams to receive, monitor, and manage incoming distress alerts efficiently.
 
 ## Implementation
 
 ### For Software:
 
 #### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
+bash
+flutter pub get
+
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
+bash
+flutter run
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
@@ -83,104 +63,37 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+1. <img width="722" height="1600" alt="image" src="https://github.com/user-attachments/assets/ec93b2f5-94cc-46c7-bafa-05e2f1bafa32" />
+Send an emergency SOS instantly in offline mode.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+2. <img width="722" height="1600" alt="image" src="https://github.com/user-attachments/assets/af558522-2a96-4016-8a32-8f1206e8673a" />
+Rescue Authority Mode actively scanning for nearby distress signals.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+3. <img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/26693c58-f83a-4824-9cf2-d0d081b85e52" />
+Authorities receiving real-time SOS alerts with user location details.
+
 
 #### Diagrams
 
 **System Architecture:**
+![WhatsApp Image 2026-02-14 at 10 04 36 AM](https://github.com/user-attachments/assets/85a0c8f6-a5af-4e14-bce1-224b9903706d)
+-The system follows a layered architecture with a Flutter UI layer, a Provider-based state management layer, and a Service layer handling core logic (SOS creation, Bluetooth mesh communication, and location fetching).
+When a user triggers SOS, the app fetches GPS coordinates, creates a structured alert packet, and broadcasts it via Bluetooth mesh to nearby devices, where Authority Mode displays the received alerts — all without requiring internet connectivity.
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
 *Add caption explaining your workflow*
 
----
 
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
----
-
-## Additional Documentation
-
-### For Web Projects with Backend:
-
-#### API Documentation
-
-**Base URL:** `https://api.yourproject.com`
-
-##### Endpoints
-
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
-
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
-
-[Add more endpoints as needed...]
-
----
 
 ### For Mobile Apps:
-
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
+![WhatsApp Image 2026-02-14 at 10 00 59 AM](https://github.com/user-attachments/assets/43d7f0c0-2400-48e5-9fc1-71baff07e96b)
+-The app starts by launching and requesting Bluetooth and location permissions.
+If permissions are granted, it initializes services and begins advertising and discovery mode.
+When the user presses the SOS button, the app fetches the current location and creates an SOS JSON message.
+The alert is broadcast via Bluetooth mesh, received by nearby devices, displayed in Authority Mode, and optionally triggers a siren.
 
 #### Installation Guide
 
@@ -361,9 +274,9 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+https://drive.google.com/file/d/1dutO9nGjvzm-P0u2s8lGO2OIGE1tutH1/view?usp=drivesdk
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+Disaster SOS is an offline emergency app that uses Bluetooth to broadcast your precise GPS location to nearby devices when cellular networks fail. Once the SOS button is triggered, it sounds a loud siren on receiving phones to alert people in the vicinity for an immediate rescue. This project provides a critical safety net for natural disasters or remote areas where traditional communication is unavailable.
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
@@ -371,40 +284,39 @@ python script.py -v --format json data.json
 ---
 
 ## AI Tools Used (Optional - For Transparency Bonus)
+ ChatGPT, Google, Gemini, Claude, GitHub, Copilot
 
-If you used AI tools during development, document them here for transparency:
-
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
-
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+**Purpose:** 
+Generated initial boilerplate Flutter code
+Assisted in Bluetooth mesh integration using nearby_connections
+Debugged permission and Android 12+ compatibility issues
+Suggested architecture improvements (Service layer + Provider pattern)
+Helped optimize SOS data model and JSON serialization
+Improved documentation, README, and presentation content
 
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
+"Implement Bluetooth P2P mesh communication in Flutter"
+"Fix Nearby Devices permission issue in Android 12+"
+"Design a scalable service-layer architecture for Flutter emergency app"
+"Generate SOS message model with JSON serialization"
+"Improve hackathon project description for evaluation"
 
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:**
+ Approximately 70–75% (primarily boilerplate, debugging guidance, and structure generation)
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
-
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
-
----
+Core idea conceptualization and problem identification
+Final architecture decisions and feature selection
+Integration of all modules into a working system
+Real-device testing and debugging
+UI/UX refinements and siren behavior implementation
+Final optimization and validation for hackathon demo
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
-
----
+Team Contributions
+Akshayalakshmi K : UI implementation, SOS trigger logic, siren integration, documentation and presentation preparation.
+Sreelakshmi K S : Bluetooth mesh networking, location services integration, Rescue Authority Mode, testing and debugging.
 
 ## License
 
