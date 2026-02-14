@@ -106,74 +106,14 @@ The alert is broadcast via Bluetooth mesh, received by nearby devices, displayed
 4. Follow the installation prompts
 5. Open the app and enjoy!
 
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
 
 **Building from Source:**
-```bash
+bash
 # For Android
 flutter build apk
-# or
-./gradlew assembleDebug
 
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
 
----
 
-### For Hardware Projects:
-
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
 
 ### For Scripts/CLI Tools:
 
@@ -275,13 +215,8 @@ python script.py -v --format json data.json
 
 ### Video
 https://drive.google.com/file/d/1dutO9nGjvzm-P0u2s8lGO2OIGE1tutH1/view?usp=drivesdk
+ResQLink is an offline emergency app that uses Bluetooth to broadcast your precise GPS location to nearby devices when cellular networks fail. Once the SOS button is triggered, it sounds a loud siren on receiving phones to alert people in the vicinity for an immediate rescue. This project provides a critical safety net for natural disasters or remote areas where traditional communication is unavailable.
 
-Disaster SOS is an offline emergency app that uses Bluetooth to broadcast your precise GPS location to nearby devices when cellular networks fail. Once the SOS button is triggered, it sounds a loud siren on receiving phones to alert people in the vicinity for an immediate rescue. This project provides a critical safety net for natural disasters or remote areas where traditional communication is unavailable.
-
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
-
----
 
 ## AI Tools Used (Optional - For Transparency Bonus)
  ChatGPT, Google, Gemini, Claude, GitHub, Copilot
